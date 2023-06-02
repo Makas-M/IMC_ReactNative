@@ -1,6 +1,12 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+    resultados: {
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 10,
+    },
+    
     resultImc: {
         flex: 1,
         marginTop: 15,
@@ -14,12 +20,15 @@ const styles = StyleSheet.create({
         fontSize: 48,
         color: "#FF0043",
         fontWeight: "bold",
+        
+        
     },
     information: {
         fontSize: 18,
         color: "#FF0043",
         fontWeight: "bold",
-        justifyContent: "center"
+        justifyContent: "center",
+       
     }
 
 })
