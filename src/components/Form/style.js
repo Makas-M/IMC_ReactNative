@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
     form: {
         width: "100%",
-        paddingTop: 20,
+        paddingTop  : 20,
     },
     formLabel: {
         color: "#000000",
