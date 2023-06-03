@@ -2,30 +2,29 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     contextIMC: {
-        marginTop: 20,
-        paddingtop:15,
+        marginTop: 1,
+        paddingtop:1,
         alignItems: "center",
         width: "100%"
     },
    
     resultIMC: {
         flex: 1,
-        marginTop: 15,
-        paddingTop: 40,
+        marginTop: 1,
+        paddingTop: 1,
         borderRadius: 50,
         alignItems: "center",
         width: "100%",
         
     },
     numberIMC: {
-        fontSize: 40,
+        fontSize: 36,
         color: "#FF0043",
-        fontWeight: "bold",
-        
-        
+        fontWeight: "bold",  
     },
+
     information: {
-        fontSize: 18,
+        fontSize: 16,
         color: "#FF0043",
         fontWeight: "bold",
         justifyContent: "center",
@@ -34,20 +33,20 @@ const styles = StyleSheet.create({
     boxSharebutton:{
         width: "100%",
         alignItems: "center",
-        marginBottom: 10,
+        marginBottom: 1,
     },
+
     shared: {
         backgroundColor: "#1877f2",
         borderRadius: 50,
         paddingBottom: 5,
         paddingTop: 5,
-
     },
+
     sharedText:{
         color:  "#ffffff",
         fontwight: "bold",
         paddingHorizontal: 30, 
-    }
-
+    },
 })
 export default styles

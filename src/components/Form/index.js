@@ -21,7 +21,8 @@ export default function Form(){
 
     //funcao que calcula o imc
     function imcCalculator (){
-        return setImc((weight/(height*height)).toFixed(2))
+        let heightformat = height.replace(",", ".")
+        return setImc((weight/(heightformat*heightformat)).toFixed(2))
     }
     //funcao para verificar se imc esta vazio ou nao
     function verificationIMC (){
