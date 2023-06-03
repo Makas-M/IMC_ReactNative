@@ -1,5 +1,13 @@
 import React, {useState} from "react"
-import {View, Text, TextInput, TouchableOpacity, Vibration } from "react-native"
+import {
+    View,
+    Text, 
+    TextInput, 
+    TouchableOpacity, 
+    Vibration,
+    Pressable,
+    Keyboard
+} from "react-native"
 import ResultIMC from "./ResultIMC";
 import styles from "./style";
 
@@ -41,7 +49,7 @@ export default function Form(){
     }   
     
     return(
-        <View style={styles.formContext}>
+        <Pressable onPress={Keyboard.dismiss} style={styles.formContext}>
             <View style={styles.form}>
                 <Text style={styles.formLabel}>Altura</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
@@ -50,7 +58,6 @@ export default function Form(){
                    placeholder="Ex.: 1.75"
                    keyboardType="numeric"
                 />
-
 
                 <Text style={styles.formLabel}>Peso</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
@@ -65,9 +72,8 @@ export default function Form(){
                         <Text style={styles.textButtonCalculator}>{textButton}</Text>
                    </TouchableOpacity>
 
-
                 <ResultIMC messageResultIMC={messageIMC} resultIMC={IMC}/>
             </View>
-        </View>
+        </Pressable>
     );
 }
