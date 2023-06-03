@@ -1,5 +1,10 @@
 import React from "react"
-import { View, Text, TouchableOpacity, Share } from "react-native"
+import {
+    View, 
+    Text, 
+    TouchableOpacity, 
+    Share 
+} from "react-native"
 import styles from "./style";
 
 export default function ResultIMC(props){
@@ -12,7 +17,7 @@ export default function ResultIMC(props){
 
     return(
         <View styles={styles.contextMC}>
-            <View>
+            <View> 
             {props.resultIMC !=null ?
                 <TouchableOpacity>
                     <Text>Partilhar</Text>
